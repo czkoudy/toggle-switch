@@ -1,0 +1,1 @@
+- ([^\s]*)src\lib\.(css|less|scss|styl)$

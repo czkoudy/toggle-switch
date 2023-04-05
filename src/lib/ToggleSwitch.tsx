@@ -24,9 +24,9 @@ export const ToggleSwitch = forwardRef<HTMLInputElement, ToggleSwitchProps>(
       size = 'sm',
       onStyle = 'success',
       offStyle = 'danger',
-      onLabel = 'In Use',
-      offLabel = 'Not in Use',
-      width: toggleWidth = '100px',
+      onLabel = 'On',
+      offLabel = 'Off',
+      width: toggleWidth = '150px',
       name: toggleName = 'toggle',
       disabled = false,
       onChange,
@@ -68,7 +68,7 @@ export const ToggleSwitch = forwardRef<HTMLInputElement, ToggleSwitchProps>(
             className={`btn btn-${onStyle} btn-${size} toggle-on`}
             ref={labelOn}
           >
-            {onLabel || 'In Use'}
+            {onLabel}
           </label>
           <label
             htmlFor={`toggle-${uniqueId}`}

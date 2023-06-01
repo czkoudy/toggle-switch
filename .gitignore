@@ -3,7 +3,6 @@
 /public
 
 .hintrc
-package-lock.json
 index.html
 vite.config.js
 

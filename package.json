@@ -8,10 +8,7 @@
   "module": "./dist/index.es.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/czkoudy/toggle-switch.git"
-  },
+  "repository": "czkoudy/toggle-switch",
   "bugs": {
     "url": "https://github.com/czkoudy/toggle-switch/issues"
   },

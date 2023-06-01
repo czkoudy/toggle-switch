@@ -3,7 +3,6 @@
 /public
 
 .hintrc
-index.html
 vite.config.js
 
 App.tsx

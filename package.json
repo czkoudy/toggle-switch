@@ -80,6 +80,14 @@
     "vite-plugin-css-injected-by-js": "^3.1.0",
     "vite-plugin-dts": "^2.2.0"
   },
+  "babel": {
+    "plugins": [
+      "@babel/plugin-proposal-optional-chaining"
+    ],
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
   "files": [
     "dist",
     "README.md"

@@ -12,3 +12,5 @@ App.css
 index.css
 main.tsx
 .npmrc
+*.txt
+index.html

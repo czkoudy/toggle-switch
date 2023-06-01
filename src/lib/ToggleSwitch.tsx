@@ -1,6 +1,7 @@
 import './toggleswitch.css';
-import { forwardRef, useState, useRef } from 'react';
+import React, { forwardRef, useState, useRef } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import styled from 'styled-components';
 
 interface ToggleSwitchProps {
   value: boolean;
@@ -45,13 +46,16 @@ export const ToggleSwitch = forwardRef<HTMLInputElement, ToggleSwitchProps>(
       }
     };
 
+    const ToggleSwitchContainer = styled.div`
+      width: ${toggleWidth};
+    `;
+
     return (
-      <div
+      <ToggleSwitchContainer
         className={`toggle btn btn-${
           toggleCheck ? onStyle : offStyle
         } btn-${size} ${toggleCheck ? 'on' : 'off'} ${disabled && 'disabled'}`}
         role="button"
-        style={{ width: toggleWidth }}
       >
         <input
           id={`toggle-${uniqueId}`}
@@ -82,7 +86,7 @@ export const ToggleSwitch = forwardRef<HTMLInputElement, ToggleSwitchProps>(
             ref={handle}
           />
         </div>
-      </div>
+      </ToggleSwitchContainer>
     );
   }
 );

@@ -4,15 +4,15 @@ import { v4 as uuidv4 } from 'uuid';
 import styled from 'styled-components';
 
 interface ToggleSwitchProps {
-  value: boolean;
-  checked?: boolean;
   size?: 'xs' | 'sm' | 'lg';
   onStyle?: string;
   offStyle?: string;
   onLabel?: string;
   offLabel?: string;
+  checked?: boolean;
   width?: string;
   name?: string;
+  value: boolean;
   disabled?: boolean;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }

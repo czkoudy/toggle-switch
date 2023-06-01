@@ -22,7 +22,7 @@
 npm install --save @czkoudy/toggle-switch
 ```
 
-## Usage
+## Usage 1.3.2
 
 ```jsx
 import ToggleSwitch from '@czkoudy/toggle-switch';

@@ -3,8 +3,9 @@ import React, { forwardRef, useState, useRef } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import styled from 'styled-components';
 
-interface ToggleSwitchProps {
-  size?: 'xs' | 'sm' | 'lg';
+type ToggleSwitchProps = {
+  value: boolean;
+  size?: 'xs' | 'sm' | 'md' | 'lg';
   onStyle?: string;
   offStyle?: string;
   onLabel?: string;
@@ -12,10 +13,9 @@ interface ToggleSwitchProps {
   checked?: boolean;
   width?: string;
   name?: string;
-  value: boolean;
   disabled?: boolean;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-}
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+};
 
 export const ToggleSwitch = forwardRef<HTMLInputElement, ToggleSwitchProps>(
   (props, ref) => {

@@ -14,12 +14,7 @@ export default ({ mode }) => {
         '@': path.resolve(__dirname, './src'),
       },
     },
-    server: {
-      open: false,
-      port: 3000,
-      strictPort: true,
-      // https: true
-    },
+
     build: {
       lib: {
         entry: path.resolve(__dirname, './src/lib/index.ts'),

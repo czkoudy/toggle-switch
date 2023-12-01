@@ -27,10 +27,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "prepare": "npm run build",
+    "prepare": "pnpm run build",
     "semantic-release": "semantic-release --branches main",
     "commit": "git-cz",
-    "acp": "git add . && npm run commit && git push"
+    "acp": "git add . && pnpm run commit && git push"
   },
   "eslintConfig": {
     "extends": [
